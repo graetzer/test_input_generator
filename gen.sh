@@ -11,7 +11,7 @@ python2.7 main.py --format RESP --rbegin=700 --rend=800 --tbegin=20170101T000000
 
 wait
 
-python2.7 main.py --format RESP  --rbegin=800  --rend=900  --tbegin=20170101T000000 --tend=20170102T000000 --tdelta=00:00:01 | gzip > 1day_1000names_1sec_step_9.gz &
+python2.7 main.py --format RESP --rbegin=800  --rend=900  --tbegin=20170101T000000 --tend=20170102T000000 --tdelta=00:00:01 | gzip > 1day_1000names_1sec_step_9.gz &
 python2.7 main.py --format RESP --rbegin=900  --rend=1000 --tbegin=20170101T000000 --tend=20170102T000000 --tdelta=00:00:01 | gzip > 1day_1000names_1sec_step_10.gz &
 python2.7 main.py --format RESP --rbegin=1000 --rend=1100 --tbegin=20170101T000000 --tend=20170102T000000 --tdelta=00:00:01 | gzip > 1day_1000names_1sec_step_11.gz &
 python2.7 main.py --format RESP --rbegin=1100 --rend=1200 --tbegin=20170101T000000 --tend=20170102T000000 --tdelta=00:00:01 | gzip > 1day_1000names_1sec_step_12.gz &
